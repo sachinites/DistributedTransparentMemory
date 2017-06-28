@@ -1,7 +1,7 @@
 # DistributedTransparentMemory
 DistributedTransparentMemory
 
-This project pertains to developing the Object oriented application to enable configure network devices. The application allows administrator to store the various protocol specific configuration operations on a backend device. The application follows plugin-play design - that is, for new module or protocol, the developer needs to register the new set of configuration supported by the protocol with minimal code changes. Focus was to harness the OOPs design concepts to make the application open for extension but closed for modification. In addition, the application provides the WEB interface support to manipulate the network device configuration using REST API developed from scratch in C++. The CLI interface is not yet present to interact with the backend device. It is a future scope.
+This is the implementation of Distributed transparent memory in C, based on socket programming project. A distributed memory - adding up the main memory of several connected machines together to create a one big unified chunk of storage for the user - the locality information of the data is completely hidden from the user. Data stored by the user is hashed to the memory of of one of the connected backend node and resides there. Memory appear as local memory to the end user, though memory is distributed across several machines in the backend. User specify the necessary keys to fetch the data, the backend automatically finds the machine which hosts the requested data and fetch it to user. This is how Hadoop HDFS is designed. The exact problem statement is here.
 
 NAME: ABHISHEK SAGAR
 ROLL NO: 10305042
