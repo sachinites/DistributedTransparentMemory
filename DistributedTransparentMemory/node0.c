@@ -26,7 +26,7 @@ struct node
 	int data;
 	struct node *link;
 };
-int num=2;
+int num=0;
 #if 0
 int N=2;
 char ip1[20];
